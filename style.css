@@ -1,0 +1,40 @@
+nav.navbar.navbar-default {
+    min-height: 100px;
+}
+.sidebarContent{
+	margin-bottom:15px;
+	min-height:180px;
+	border-style:ridge;
+	border-width:1px;
+    border-color: black;
+	text-align:center;
+	font-size:large;
+}
+.mainContent{
+	margin-bottom:15px;
+	min-height:220px;
+	min-width:400px;
+	border-style:ridge;
+	border-width:1px;
+    border-color: black;
+	text-align:center;
+	font-size:large;
+}
+.mer-logo{
+	width:150px;
+	height:200px;
+}
+.borderimg{
+	border-image-width: 10px;
+}
+ .tile-content{
+    font-size: 26px;
+    white-space: nowrap;
+    font-weight: bold;
+    display: block;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+
+

@@ -1,0 +1,230 @@
+/* =============================================================================
+  COUPON THEME BY PREMIUM PRESS
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(style_childtheme.css);
+
+/* REMOVE ROUNDED CORNERS */ 
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+body {
+   color: #222;
+   font-family: Open Sans, sans-serif; 
+   font-size:16px;
+	background-image: url(img/bg.png);
+	 
+} 
+
+.page-wrapper {
+    margin:0 auto;
+    border:1px solid #ccc;
+    border-width:0 1px;
+    -webkit-box-shadow:0 0 25px 0 #b0b0b0;
+    box-shadow:0 0 25px 0 #b0b0b0; 
+    padding-top:0;
+    background:#fff;
+    min-height:800px;
+ 
+}
+/*** LINKS ***/
+a { color: #474646 }
+
+/*------------------------------------------------------*/
+/* BUTTONS
+/*------------------------------------------------------*/
+
+.btn-primary { background-image:none; background: #515151; border-color:#515151;  }
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #606060;}	
+
+/*------------------------------------------------------*/
+/* CORE ADJUSTMENTS
+/*------------------------------------------------------*/
+
+#core_padding {  background:#FAFAFA; }
+.page-wrapper { background:#fff; border-width: 0 1px 0 1px;  padding:0px; margin:auto auto; }
+
+/*------------------------------------------------------*/
+/* GOOGLE FONT
+/*------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, #core_menu_wrapper .nav > li > a {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+ 
+#core_logo { margin-bottom:20px; }
+#core_logo .main { font-family: 'Lobster', cursive; font-size:50px; text-indent: -10px; margin-top: -20px; color:#000; }
+#core_logo .submain { margin-top:15px; margin-top: -10px; color:#000; }
+@media (max-width: 768px){
+#core_logo .main {  font-size: 45px;}
+#core_logo .submain {  font-size: 12px;}
+}
+@media (max-width: 990px) and (min-width: 0px){
+#core_logo .main { font-size:50px; }
+#core_logo .submain { font-size:14px; }
+}
+ 
+/*------------------------------------------------------*/
+/* HEADERS
+/*------------------------------------------------------*/
+
+.wlt_searchbox input {  border: 1px solid #ddd; }
+
+/*------------------------------------------------------*/
+/* TOP NAVIGATION
+/*------------------------------------------------------*/
+
+#core_header_navigation { border-bottom:1px dotted #ddd;  }
+#core_header_navigation .nav > li a, #core_header_navigation .welcometext {   text-transform: uppercase; font-weight:normal;  }
+#core_header_navigation .nav > li + li:before {  opacity: 0.1; }
+#core_header_navigation .nav > li ul li a { color:#000; }
+ 
+/*------------------------------------------------------*/
+/* MAIN MENU
+/*------------------------------------------------------*/
+ 
+#core_menu_wrapper{ background-color:#329ad6;; }
+#core_menu_wrapper .nav > li > a { color:#fff; }
+ 
+#core_menu_wrapper .navbar-nav > li { padding: 23px 0px;  border-right: 1px solid white; border-color: rgba(0, 0, 0, 0.1); }
+#core_menu_wrapper .navbar-nav > li a { color:#fff;  text-align:center; text-transform: uppercase;   }
+#core_menu_wrapper .navbar-nav > li:hover, #core_menu_wrapper .current-menu-item {  background-color: rgba(0, 0, 0, 0.05); }
+
+.home #core_menu_wrapper .navbar-nav > li { border:0px; }
+.home #core_menu_wrapper .navbar-nav > li:hover, .home #core_menu_wrapper .current-menu-item { background:transparent; }
+.home #core_menu_wrapper {  border-bottom: 1px solid white; border-color: rgba(0, 0, 0, 0.1); }
+
+.menu_style4 .button .title:before {
+    content: "\f02c";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 10px;
+}
+@media (min-width: 1100px) {
+#core_menu_wrapper .navbar-nav > li {    min-width:140px;  }
+}
+/*------------------------------------------------------*/
+/* SEARCH PAGE
+/*------------------------------------------------------*/
+
+.search .core_middle_wrap, .archive .core_middle_wrap {   padding: 20px;  border: 1px solid #ddd; margin-bottom:20px; background:#fff; }
+._searchresultsblock h4 {  background: #efefef;  padding: 10px; color:#999; font-weight:300; }
+._searchresultsblock h3 {     font-family: 'Lobster', cursive; margin-top: 0px; }
+#core_advanced_search_widget_box .panel1 { background:transparent !important; }
+ 
+/*------------------------------------------------------*/
+/* BREADCRUMBS
+/*------------------------------------------------------*/
+
+#core_breadcrumbs {
+    border-bottom: 1px dotted #ddd;
+}
+#core_breadcrumbs .row { margin:0px; }
+  
+/*------------------------------------------------------*/
+/* PANELS
+/*------------------------------------------------------*/
+
+.home .panel-default, #core_right_column .panel-default, #core_left_column .panel-default { border:0px; background:transparent;   background: #E8E8E8;    }
+.home .panel-default > .panel-heading, #core_right_column .panel-default > .panel-heading, #core_left_column .panel-default > .panel-heading, .wlt_widget_newsletter_html strong { border:0px; background:transparent; text-align: center;    line-height: 40px;    font-weight: 700;    padding-bottom: 0px;  font-family: 'Lobster', cursive; font-size:21px;  color:#888 } 
+ 
+#core_advanced_search_widget_box {  background: rgb(237, 247, 223) !important;    border: 1px dashed #C8D8C8 !important; padding:10px;  }
+#core_advanced_search_widget_box .panel-heading { border:0px; color: #7BB12F !important; background:transparent; }
+#core_advanced_search_widget_box .btn { background:rgb(123, 177, 47); border:0px; }
+
+.core_widgets_stores_list p { font-size:12px; }
+
+.wlt_widget_newsletter_html .panel-body:before {  content: "\f086"; font-family: FontAwesome; margin-right:15px; float: left;  font-size: 50px; color: #CECDCD; }
+
+/*------------------------------------------------------*/
+/* HOME PAGE
+/*------------------------------------------------------*/
+
+.title1 h2 {   background:#E8E8E8;; margin-bottom: 10px; color: #444;  border: 0px;   padding:10px;     font-size: 30px;      font-family: 'Lobster', cursive;   font-weight: bold; margin-top:0px; text-shadow: 1px 1px 1px #fff; }
+.owl-item .frame { height:80px;  overflow:hidden; }
+.owl-item .frame img { max-height:80px; }
+.owl-item h4 { height:30px; display: block; clear: both; overflow:hidden; }
+
+.jumbostyle2 .jumbotron {
+margin: -10px -15px 20px -15px; padding:0px;
+  background: #329ad6;
+  color:#fff; 
+}
+.gra {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+33,000000+72&amp;0+8,0.65+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 8%, rgba(0,0,0,0.18) 33%, rgba(0,0,0,0.45) 72%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,rgba(0,0,0,0)), color-stop(33%,rgba(0,0,0,0.18)), color-stop(72%,rgba(0,0,0,0.45)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.18) 33%,rgba(0,0,0,0.45) 72%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.18) 33%,rgba(0,0,0,0.45) 72%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.18) 33%,rgba(0,0,0,0.45) 72%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.18) 33%,rgba(0,0,0,0.45) 72%,rgba(0,0,0,0.65) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+padding:30px;
+
+
+
+}
+.jumbostyle2 h1 { font-size:75px; font-weight:300;  font-family: 'Lobster', cursive;      margin-top: 0px; }
+.jumbostyle2 h2 { padding-bottom:20px; font-weight:300;  }
+.jumbostyle2 p { font-size:16px; }
+.jumbostyle2 .mainicon { background:url(img/icon.png); width:300px; height:251px; float:right; }
+
+@media (max-width: 480px) {
+.jumbostyle2 .jumbotron { padding:10px; }
+.jumbostyle2 h1 { font-size:40px; }
+.jumbostyle2 h2 { font-size:20px; }
+.jumbotron .gra { padding:0px; background:none; }
+}
+
+#recentlistings .panel { background:transparent; border:0px; }
+#recentlistings .panel-default>.panel-heading { margin-bottom:10px;  }
+#recentlistings .panel-body { padding:0px; }
+#recentlistings .thumbnail { margin-bottom:10px; }
+
+/*------------------------------------------------------*/
+/* STORES WIDGET
+/*------------------------------------------------------*/
+  
+.core_widgets_stores_list .panel { border:0px; box-shadow:none; background: #E8E8E8; }
+.wlt_shortcode_coupon_used { font-size:12px; } 
+.wlt_shortcode_coupon_used:before {  font: normal normal normal 12px/1 FontAwesome; content: "\f007";  }
+
+/*------------------------------------------------------*/
+/* NEW TOP SEARCH
+/*------------------------------------------------------*/
+ 
+.nsearch { margin-top:20px;   }
+.nsearch .col-md-4 {  }
+.nsearch select, .nsearch input { height:46px; margin-top:0px;  font-size:14px; }
+.nsearch input { border:0px; height:44px; padding-left:10px; }
+.nsearch .ss { position: relative; border:1px solid #ccc;  background:#fff;   }
+.nsearch .sb {
+    float: right;
+    font-size: 26.24px;
+    color: #ccc;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    vertical-align: top;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+	cursor:pointer;
+	border:0px;
+	background:transparent;
+}
+ 
+@media (min-width: 900px) {
+.nsearch { margin-left: -120px; } 
+}
+ @media (min-width: 900px) {
+ .wlt_search_results.grid_style .clicktoreveal .over { font-size:11px !important; }
+  .wlt_search_results.grid_style .clicktoreveal .over span:before { display:none; }
+ } 

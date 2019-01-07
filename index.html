@@ -1,0 +1,231 @@
+<?php
+mysql_connect("localhost","root","")or die("could not connect") 
+mysql_select_db("gotmatter") or die("could not find db")
+
+ 
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="generator" content="H@CKED">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.carousel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      scalemode: 1,
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+});
+</script>
+</head>
+<body>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .row {
+        width: 100%;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+div {
+    
+    padding: 0px 10px 10px 10px;
+
+}
+
+</style>
+<body style="background-color:white;">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+  
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img height="44"src="images/logo.png" width="200" border="0" class="img-responsive"</img></a>
+    </div>
+	
+	<div class="container">
+	<div class="row">
+        <div class="col-md-10">
+    		<h2></h2>
+            <div id="custom-search-input"></br>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search here" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+							
+                        </button>
+						<?php
+							$sql="select * from serachh";
+							$result=mysql_query($mysql_connect);
+							$queryResults=mysql_num_rows($result);
+							if($queryResults>0)
+							{
+							while($row=mysql_fetch_assoc($result))
+							{
+							echo "<div>
+							<h3>".$row['id']."</h3>
+							</div>";
+							}
+							}
+							
+							 
+						<div class="custom_nav">
+          <button class="btn_login_next"> 
+		  <img src="https://www.gotmatter.com/shop/ui/images/nav.png" class="img-responsive">
+		  </button>
+          <div class="hidnav" style="display: block;">
+		  <img src="https://www.gotmatter.com/shop/ui/images/caret.png"> 
+          <a href="javascript:void(0)" data-toggle="modal" data-target=".login-modal-lg" id="signin" class="chkMdl"><i class="fa fa-sign-in" aria-hidden="true"></i> User Login</a> 
+          <a href="javascript:void(0)" data-toggle="modal" data-target=".signup-modal-lg" id="signup" class="chkMdl"><i class="fa fa-user-circle-o" aria-hidden="true"></i> User Register</a> 
+		  </div>
+        </div>
+	
+			
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+	</br>
+	
+  </div>
+</nav>
+</br>
+
+
+
+<div id="wb_Carousel1" style="position:absolute;left:134px;top:107px;width:703px;height:199px;z-index:3;overflow:hidden;">
+<div id="Carousel1" style="position:absolute;">
+<div class="frame">
+<div id="wb_Image1" style="position:absolute;left:39px;top:34px;width:575px;height:115px;z-index:0;">
+<img src="images/1.png" id="Image1" alt=""></div>
+</div>
+<div class="frame">
+<div id="wb_Image2" style="position:absolute;left:858px;top:38px;width:431px;height:122px;z-index:1;">
+<img src="images/2.png" id="Image2" alt=""></div>
+</div>
+<div class="frame">
+<div id="wb_Image3" style="position:absolute;left:1532px;top:21px;width:435px;height:129px;z-index:2;">
+<img src="images/8.png" id="Image3" alt=""></div>
+</div>
+</div>
+<div id="Carousel1_back"><a><img alt="Back" src="images/carousel_back.png"></a></div>
+<div id="Carousel1_next"><a><img alt="Next" src="images/carousel_next.png"></a></div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+ <div class="row">
+	
+      <div class="col-lg-2 col-xs-6  col-md-4">
+	  <a href="second.html">
+          <img src="images/1.png"class="img-responsive" class="img-rounded" id="1">
+      </div>
+      <div class="col-lg-2 col-xs-6 col-md-4">
+	   <a href="second.html">
+          <img src="images/2.png"class="img-responsive" class="img-rounded" id="2">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4" >
+	   <a href="second.html">
+          <img src="images/3.png"class="img-responsive"class="img-rounded" id="3">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4"class="img-rounded" >
+	   <a href="second.html">
+          <img src="images/4.png"  class="img-responsive"class="img-rounded"id="4">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4" >
+	   <a href="second.html">
+          <img src="images/5.png"  class="img-responsive"class="img-rounded"id="5">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4 " >
+	   <a href="second.html">
+          <img src="images/6.png"  class="img-responsive"class="img-rounded">
+      </div>
+	  <div class="col-lg-2 col-xs-6  col-md-4" >
+	   <a href="second.html">
+          <img src="images/7.png"  class="img-responsive"class="img-rounded">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4 " >
+	   <a href="second.html">
+          <img src="images/8.png"  class="img-responsive"class="img-rounded">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4" >
+	   <a href="second.html">
+          <img src="images/9.png"  class="img-responsive"class="img-rounded">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4 " >
+	   <a href="2.html">
+          <img src="images/10.png"  class="img-responsive"class="img-rounded">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4 " >
+	   <a href="second.html">
+          <img src="images/11.png"  class="img-responsive"class="img-rounded">
+      </div>
+	  <div class="col-lg-2 col-xs-6 col-md-4" >
+	   <a href="second.html">
+          <img src="images/12.png"  class="img-responsive"class="img-rounded">
+      </div>    
+  </div>
+</body>
+
+</html>
